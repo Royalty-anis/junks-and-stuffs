@@ -8,12 +8,12 @@ def recheck():
     while True:
         vat_recheck = input("Will you like to check any other? Yes/No> ").lower()
         if vat_recheck == 'yes':
-            vat()
+            return vat()
         elif vat_recheck == 'no':
-            exit()
+            return
         else:
             print("input the right option!")
-            recheck()
+            return recheck()
 
 try:
     print(vat())
